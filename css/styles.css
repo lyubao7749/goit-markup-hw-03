@@ -1,0 +1,225 @@
+:root {
+  --main-font: 'Roboto';
+  --second-font: 'Raleway';
+  --main-color-text: #212121;
+  --second-color-text: #757575;
+  --accent-color: #2196f3;
+  --accent-second-color: #188ce8;
+  --primary-bgr: #ffffff;
+  --second-bgr: #f5f4fa;
+  --accent-bgr: #2f303a;
+  --sec-text-color: var(--primary-bgr);
+}
+body {
+  font-family: var(--main-font), sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  background: var(--primary-bgr);
+  color: var(--main-color-text);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-family: inherit;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.logo {
+  font-family: var(--second-font), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.links .link-text {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--main-color-text);
+}
+.link-text.current {
+  color: var(--accent-color);
+}
+
+.contacts .link-text {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--second-color-text);
+}
+
+.links .link-text:hover,
+.links .link-text:focus,
+.contacts .link-text:hover,
+.contacts .link-text:focus {
+  color: var(--accent-color);
+}
+
+/* hero section */
+.hero {
+  background-color: var(--accent-bgr);
+  padding: 200px 0;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  max-width: 650px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: var(--sec-text-color);
+}
+
+.hero-btn {
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+  margin: 0 auto;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--sec-text-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-second-color);
+}
+
+/* section */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+
+.feature-title {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color-text);
+}
+
+.feature-text {
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
+}
+
+.team-section {
+  background-color: var(--second-bgr);
+}
+.team-list > li {
+  background-color: var(--primary-bgr);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color-text);
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
+}
+
+/* footer */
+.footer {
+  background-color: var(--accent-bgr);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-link {
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--primary-bgr);
+}
+
+.address-link.address-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link.address-contact:hover,
+.address-link.address-contact:focus {
+  color: var(--accent-color);
+}
+
+.btn-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: var(--main-color-text);
+  background-color: var(--second-bgr);
+}
+
+.btn-filter:hover,
+.btn-filter:focus .btn-filter:active {
+  background-color: var(--accent-color);
+  color: var(--sec-text-color);
+}
+
+.btn-filter.btn-active {
+  background-color: var(--accent-color);
+  color: var(--sec-text-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-color-text);
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--second-color-text);
+}
