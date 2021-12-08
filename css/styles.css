@@ -284,27 +284,29 @@ img {
 }
 /* footer */
 .page-footer {
+  padding: 60px 0 60px 0;
   background-color: var(--accent-bgr);
 }
 
 .logo-footer {
-  padding: 60px 0 20px 0;
   margin-right: 0;
+  padding: 0;
 }
 
 .address {
+  margin-top: 20px;
   font-style: normal;
 }
 
 .address-link {
   display: inline-block;
-  margin-top: 9px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--primary-bgr);
 }
 
 .address-link.address-contact {
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 .address-link.address-contact:hover,
